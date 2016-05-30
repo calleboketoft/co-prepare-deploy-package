@@ -1,5 +1,5 @@
-var config =  {
+module.exports =  {
   packageName: 'DEPLOY_PACKAGE.zip',
-  outDir: '',
-  globs: ['suitcase/muffler.txt', 'suitcase/zip-bag/**/*']
+  outDir: '/',
+  globs: ['example/suitcase/muffler.txt', 'example/suitcase/zip-bag/**/*']
 }

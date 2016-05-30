@@ -8,9 +8,11 @@ var path = require('path')
 //   globs: ['my-file.txt', 'my-folder/**/*']
 // }
 function pack (config) {
+  console.log(config)
+
   var packageName = config.packageName || 'PACKAGE.zip'
   var outDir = config.outDir || '/'
-  var outDirFull = path.join([_dirname, outDir, packageName])
+  var outDirFull = path.join(__dirname, outDir, packageName)
   var output = fileSystem.createWriteStream(__dirname + outDir + packageName)
   var archive = archiver('zip')
 
