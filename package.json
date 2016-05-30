@@ -1,0 +1,26 @@
+{
+  "name": "co-prepare-deployment-package",
+  "version": "1.0.0",
+  "description": "",
+  "main": "co-prepare-deploy-package.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/calleboketoft/co-prepare-deployment-package.git"
+  },
+  "keywords": [],
+  "author": "Carl-Ola Boketoft",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/calleboketoft/co-prepare-deployment-package/issues"
+  },
+  "homepage": "https://github.com/calleboketoft/co-prepare-deployment-package#readme",
+  "dependencies": {
+    "archiver": "1.0.0"
+  }
+}
