@@ -8,8 +8,6 @@ var path = require('path')
 //   globs: ['my-file.txt', 'my-folder/**/*']
 // }
 function pack (config) {
-  console.log(config)
-
   var packageName = config.packageName || 'PACKAGE.zip'
   var outDir = config.outDir || '/'
   var outDirFull = path.join(__dirname, outDir, packageName)
@@ -19,8 +17,9 @@ function pack (config) {
   console.log('Creating ' + packageName)
 
   output.on('close', () => {
-    console.log(archive.pointer() + ' total bytes')
-    console.log('archiver has been finalized and the output file descriptor has closed.')
+    console.log('Package has been created at:')
+    console.log(outDirFull)
+    console.log('Package size: ' + archive.pointer() + ' total bytes')
   })
 
   archive.on('error', (err) => {

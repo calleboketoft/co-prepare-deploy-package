@@ -1,7 +1,7 @@
 {
   "name": "co-prepare-deployment-package",
   "version": "1.0.0",
-  "description": "",
+  "description": "Zip a bunch of files and folders for deployment",
   "main": "co-prepare-deploy-package.js",
   "directories": {
     "example": "example"
